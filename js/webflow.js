@@ -32,5 +32,5 @@ t.exports=function(){var t={};t.VERSION="1.6.0-Webflow";var e={},n=Array.prototy
  */
 Webflow.require('ix').init([
   {"slug":"landingtextanimation","name":"LandingTextAnimation","value":{"style":{"opacity":0,"scaleX":1,"scaleY":1,"scaleZ":1},"triggers":[{"type":"load","stepsA":[{"opacity":1,"transition":"opacity 3000ms ease 0, transform 200 ease 0"}],"stepsB":[]}]}},
-  {"slug":"homethumbhover","name":"HomeThumbHover","value":{"style":{"title":"BW"},"triggers":[{"type":"hover","stepsA":[{"opacity":1,"transition":"opacity 200 ease 0, transform 200 ease 0"}],"stepsB":[{"opacity":0.7,"transition":"opacity 200 ease 0"}]}]}}
+  {"slug":"scrollintoview","name":"ScrollIntoView","value":{"style":{"title":"Transparent","opacity":0},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"opacity 3000ms ease 0"}],"stepsB":[]}]}}
 ]);

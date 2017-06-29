@@ -157,6 +157,15 @@
   margin-left: 0px;
   padding-left: 0px;
   background-image: none;
+  opacity: 0.7;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.image.home.homeio:hover {
+  opacity: 1;
+  -webkit-filter: none;
+  filter: none;
 }
 
 .image.home.parkhelper {
@@ -610,10 +619,18 @@
   padding-right: 40px;
 }
 
+.fullblownimage.projpage.lastimage {
+  margin-bottom: 120px;
+}
+
 html.w-mod-js *[data-ix="landingtextanimation"] {
   opacity: 0;
   -webkit-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   transform: scale(1, 1);
+}
+
+html.w-mod-js *[data-ix="scrollintoview"] {
+  opacity: 0;
 }
 
