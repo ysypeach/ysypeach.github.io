@@ -5,6 +5,7 @@
   line-height: 32px;
   font-style: italic;
   font-weight: 300;
+  letter-spacing: 0px;
   text-decoration: none;
 }
 
@@ -13,7 +14,7 @@
   margin-right: 0px;
   margin-bottom: 40px;
   padding-top: 5px;
-  padding-right: 60px;
+  padding-right: 80px;
   padding-bottom: 2px;
   float: none;
   border-width: 0px 1px;
@@ -23,13 +24,13 @@
   border-bottom-color: #333;
   font-family: 'Roboto Condensed', sans-serif;
   color: #333;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   font-style: normal;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .link.home.resume:hover {
@@ -39,6 +40,14 @@
 
 .link.home.resume.w--current {
   font-weight: 300;
+}
+
+.link.home.resume.projpage {
+  color: #fff;
+}
+
+.link.home.resume.last {
+  padding-right: 0px;
 }
 
 .link.projpage {
@@ -52,6 +61,26 @@
   font-weight: 300;
   text-decoration: none;
   cursor: pointer;
+}
+
+.link.introtext {
+  font-size: 40px;
+  line-height: 55px;
+}
+
+.link.aboutme {
+  padding-bottom: 0px;
+  border-bottom: 2px solid #333;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.link.aboutme:hover {
+  border-bottom-color: hsla(0, 0%, 100%, 0);
+  color: #aaa;
 }
 
 .landingbanner2 {
@@ -82,8 +111,8 @@
 .projheading {
   display: block;
   width: 650px;
-  margin: 0px auto 0px -3px;
-  padding: 100px 0px 20px;
+  margin: 150px auto 0px -3px;
+  padding: 0px 0px 20px;
   float: left;
   clear: none;
   border-style: solid;
@@ -91,24 +120,28 @@
   border-color: #e2e2e2 #000 #000;
   font-family: 'Roboto Slab', sans-serif;
   color: #333;
-  font-size: 70px;
+  font-size: 42px;
   line-height: 69px;
-  font-weight: 100;
+  font-weight: 400;
   text-align: left;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   text-transform: none;
 }
 
 .projheading.projpage {
-  width: 850px;
+  position: absolute;
+  top: 520px;
+  width: 25%;
   margin-top: 0px;
-  padding-top: 100px;
-  padding-bottom: 30px;
+  margin-left: -8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   float: none;
-  color: #000;
+  color: #fff;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 35px;
   font-weight: 300;
+  letter-spacing: 0px;
 }
 
 .projheading.projpage.afterlabel {
@@ -143,6 +176,7 @@
   position: absolute;
   left: 0px;
   top: 100px;
+  margin-top: 5px;
   margin-left: 0px;
   padding-top: 0px;
   padding-left: 50px;
@@ -172,17 +206,21 @@
 }
 
 .landingtext.projpage {
-  margin-left: -5px;
-  padding-top: 90px;
+  width: 100%;
+  min-width: 100%;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  padding-top: 220px;
   padding-bottom: 0px;
   float: none;
   clear: none;
   font-family: 'Roboto Slab', sans-serif;
-  color: #000;
-  font-size: 70px;
-  line-height: 80px;
-  font-weight: 100;
-  letter-spacing: -3px;
+  color: #fff;
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -1px;
   text-transform: none;
 }
 
@@ -228,8 +266,12 @@
 }
 
 .image.home {
-  margin-top: 50px;
-  opacity: 0.7;
+  position: absolute;
+  right: 110px;
+  bottom: 0px;
+  max-width: 52%;
+  margin-top: 0px;
+  opacity: 0.6;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -241,13 +283,15 @@
 }
 
 .image.home.homeio {
-  position: static;
-  left: auto;
+  position: absolute;
+  left: 0px;
   top: auto;
-  right: 0px;
+  right: auto;
   bottom: 0px;
   display: block;
   overflow: hidden;
+  height: auto;
+  max-width: 95%;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -272,11 +316,15 @@
 }
 
 .image.home.parkhelper {
+  position: absolute;
+  bottom: 0px;
+  max-width: 85%;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .image.home.emergencyhousing {
+  max-width: 80%;
   margin-bottom: 0px;
 }
 
@@ -290,6 +338,7 @@
   max-width: 50%;
   margin-top: 50px;
   margin-bottom: 0px;
+  margin-left: 600px;
   float: none;
   clear: none;
   -webkit-filter: none;
@@ -342,6 +391,10 @@
   margin-top: 40px;
 }
 
+.image.projpage.diagram {
+  margin-left: 600px;
+}
+
 .image._2 {
   width: 1600px;
   margin-right: 50px;
@@ -379,6 +432,7 @@
 }
 
 .footer {
+  position: relative;
   display: block;
   width: auto;
   height: 150px;
@@ -386,7 +440,7 @@
   margin-bottom: 0px;
   margin-left: 0px;
   padding-right: 0px;
-  padding-left: 50px;
+  padding-left: 30px;
   float: none;
   clear: none;
   border-top: 0px solid transparent;
@@ -395,10 +449,14 @@
 }
 
 .copyright {
+  position: absolute;
+  top: 95px;
+  right: 30px;
+  bottom: 0px;
   width: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 100px;
+  padding-top: 0px;
   float: none;
   clear: none;
   border-top: 0px solid #dfdfdf;
@@ -411,7 +469,7 @@
 }
 
 .socialicon {
-  margin-top: 50px;
+  margin-top: 80px;
   margin-right: 20px;
   margin-left: 0px;
 }
@@ -421,14 +479,16 @@
   filter: invert(100%);
 }
 
-.link-block {
+.contactlink {
   position: static;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: -3px;
-  padding-top: 30px;
+  margin-left: 0px;
+  padding-top: 0px;
   float: left;
   clear: none;
+  color: #333;
+  text-decoration: none;
 }
 
 .projroles {
@@ -449,7 +509,7 @@
   bottom: 0px;
   width: auto;
   max-width: 100%;
-  margin: 0px;
+  margin: 0px 0px 0px 600px;
   padding-top: 0px;
   padding-left: 0px;
   float: none;
@@ -460,7 +520,7 @@
   font-size: 60px;
   line-height: 61.5px;
   font-weight: 300;
-  text-align: right;
+  text-align: left;
   letter-spacing: -4px;
   text-transform: none;
 }
@@ -537,6 +597,7 @@
   max-width: 50%;
   margin-top: 30px;
   margin-bottom: 0px;
+  margin-left: 595px;
   float: none;
   clear: none;
   color: #333;
@@ -558,11 +619,17 @@
 .para.projpage.toppadding.afterlabel {
   max-width: 50%;
   margin-top: 40px;
+  margin-left: 600px;
   font-family: Roboto, sans-serif;
+  line-height: 32px;
 }
 
 .para.projpage.toppadding.secondpara {
   margin-top: 100px;
+}
+
+.para.projpage.toppadding.bottompadding {
+  margin-bottom: 150px;
 }
 
 .para.projpage.aboutme {
@@ -577,9 +644,7 @@
 
 .para.projpage.insights {
   max-width: 45%;
-  margin-top: 40px;
-  margin-right: 15px;
-  margin-bottom: 0px;
+  margin: 40px 15px 0px 600px;
   padding-left: 0px;
   float: left;
   clear: left;
@@ -593,6 +658,7 @@
 }
 
 .para.projpage.insights._2 {
+  max-width: 40%;
   margin-top: 20px;
 }
 
@@ -633,25 +699,25 @@
 
 .sectionlabels.projpage.designprocess {
   width: 100%;
-  margin-top: 250px;
+  margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 3px;
-  padding-top: 10px;
+  margin-left: 595px;
+  padding-top: 0px;
   padding-left: 0px;
   float: none;
   clear: none;
-  border-top: 1px solid #dfdfdf;
+  border-top: 0px solid #dfdfdf;
   font-family: 'Roboto Condensed', sans-serif;
   color: #c5c5c5;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 20px;
   letter-spacing: 2px;
 }
 
 .nextprojectbutton {
   width: 100px;
   margin-right: 0px;
-  padding: 100px 0px 40px;
+  padding: 10px 0px 0px;
   float: left;
   clear: none;
   border-style: solid;
@@ -661,9 +727,9 @@
   background-color: transparent;
   opacity: 1;
   font-family: 'Roboto Condensed', sans-serif;
-  color: #bdb9b9;
-  font-size: 18px;
-  line-height: 30px;
+  color: #333;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 100;
   text-align: left;
   letter-spacing: 0.2px;
@@ -671,7 +737,7 @@
 }
 
 .nextprojectbutton:hover {
-  color: #000;
+  color: #bdb9b9;
 }
 
 .footercolumn {
@@ -689,39 +755,56 @@
 }
 
 .column-1.homesections {
-  height: 700px;
+  height: auto;
 }
 
 .column-1.finally {
+  position: relative;
   height: 100%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
 .column-1.finally:hover {
+  background-image: -webkit-linear-gradient(270deg, #ececec, #ececec);
+  background-image: linear-gradient(180deg, #ececec, #ececec);
   -webkit-filter: none;
   filter: none;
 }
 
 .projsection.home {
-  height: 700px;
-  padding-right: 50px;
-  padding-left: 50px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  padding-right: 0px;
+  padding-left: 30px;
   border-top: 1px solid #dfdfdf;
-  background-image: -webkit-linear-gradient(270deg, #f5f5f7, #f5f5f7);
-  background-image: linear-gradient(180deg, #f5f5f7, #f5f5f7);
+}
+
+.projsection.home:hover {
+  border-top-width: 1px;
+  border-top-color: hsla(0, 0%, 87%, 0);
+  background-image: -webkit-linear-gradient(270deg, #ececec, #ececec);
+  background-image: linear-gradient(180deg, #ececec, #ececec);
 }
 
 .projsection.home.finally {
+  height: 400px;
   padding-right: 0px;
   padding-left: 0px;
+}
+
+.projsection.home.finally:hover {
+  border-top-color: #dfdfdf;
+  background-image: none;
 }
 
 .projsection.projpage {
   width: auto;
   max-width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 0px;
+  padding-left: 0px;
   float: none;
   background-image: -webkit-linear-gradient(270deg, #f5f5f7, #f5f5f7);
   background-image: linear-gradient(180deg, #f5f5f7, #f5f5f7);
@@ -760,6 +843,11 @@
   margin-top: 160px;
 }
 
+.projsection.projpage.withline {
+  margin-top: 100px;
+  border-top: 1px solid #dfdfdf;
+}
+
 .projsection.projpage.withline.youmightalsolike {
   margin-bottom: 0px;
   padding-top: 0px;
@@ -769,8 +857,17 @@
 .projsection.projpage.youmightlike {
   width: auto;
   max-width: 100%;
-  margin-top: 200px;
+  margin-top: 0px;
+  padding-right: 30px;
+  padding-left: 30px;
   border-top: 1px solid #dfdfdf;
+  text-decoration: none;
+}
+
+.projsection.projpage.youmightlike:hover {
+  border-top-color: hsla(0, 0%, 87%, 0);
+  background-image: -webkit-linear-gradient(270deg, #ececec, #ececec);
+  background-image: linear-gradient(180deg, #ececec, #ececec);
 }
 
 .projsection.projpage.introtext {
@@ -789,31 +886,53 @@
   clear: none;
 }
 
+.projsection.projpage.backtotop {
+  padding-left: 30px;
+  border-top: 1px solid #dfdfdf;
+}
+
 .column-2 {
-  position: relative;
+  position: static;
   left: 0px;
   right: 0px;
   bottom: 0px;
-  padding-right: 50px;
+  padding-right: 30px;
   border-top: 0px solid #000;
 }
 
 .column-2.footercolumn {
+  padding-right: 30px;
   border-top-width: 0px;
   border-top-color: #dfdfdf;
 }
 
 .column-2.homesections {
-  height: 700px;
+  height: 600px;
 }
 
 .column-2.homesections.leftborder {
+  height: 400px;
   padding-right: 0px;
   padding-left: 0px;
   border-left: 1px solid #dfdfdf;
 }
 
+.column-2.homesections.leftborder:hover {
+  border-left-color: #dfdfdf;
+  background-image: -webkit-linear-gradient(270deg, #ececec, #ececec);
+  background-image: linear-gradient(180deg, #ececec, #ececec);
+}
+
+.column-2.homesections.homeio {
+  padding-right: 0px;
+}
+
 .column-2.projpage {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.column-2.homelandingpage {
   padding-right: 0px;
   padding-left: 0px;
 }
@@ -822,32 +941,34 @@
   position: static;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-top: 40px;
+  padding-top: 10px;
   border-top: 0px solid #dfdfdf;
   font-family: 'Roboto Slab', sans-serif;
   color: #bdb9b9;
   font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
 .projtitle.projpage {
-  margin-top: 60px;
-  margin-bottom: 0px;
+  max-width: 80%;
+  margin-top: 50px;
+  margin-bottom: 130px;
   padding-bottom: 0px;
   font-family: 'Roboto Slab', sans-serif;
   color: #000;
-  font-size: 35px;
-  line-height: 40px;
-  font-weight: 300;
-  letter-spacing: -1px;
+  font-size: 110px;
+  line-height: 120px;
+  font-weight: 100;
+  letter-spacing: -5px;
   text-decoration: none;
 }
 
 .projtitle.projpage:hover {
   border-bottom: 0px none #000;
-  color: #aaa;
+  color: #333;
 }
 
 .projtitle.projpage.lastone {
@@ -856,24 +977,49 @@
   clear: left;
 }
 
-.projinfo.projpage {
-  max-width: 100%;
-  margin-top: 40px;
-  margin-bottom: 0px;
-  margin-left: 40px;
-  float: left;
-  clear: none;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #c5c5c5;
-  font-size: 17px;
-  line-height: 25px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.roles {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-left: 600px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
 }
 
-.projinfo.youmightlike {
-  padding-top: 10px;
+.roles.projpage {
+  position: static;
+  max-width: 100%;
+  margin: 0px 50px 0px 0px;
+  float: left;
+  clear: none;
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}
+
+.roles.projpage.bold {
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  float: none;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.roles.projpage.fourcolumn {
+  margin-right: 30px;
+}
+
+.roles.youmightlike {
+  position: static;
+  max-width: 60%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 50px;
   float: none;
   clear: left;
   font-family: Roboto, sans-serif;
@@ -882,6 +1028,18 @@
   font-weight: 500;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+
+.roles.youmightlike.bold {
+  color: #333;
+}
+
+.roles.projpagediv {
+  left: 600px;
+  top: auto;
+  right: 0px;
+  bottom: 40px;
+  margin-left: 0px;
 }
 
 .projlink {
@@ -931,7 +1089,7 @@
 
 .fullblownimage.projpage {
   width: auto;
-  margin: 150px 0px 0px;
+  margin: 80px 0px 0px;
   padding-right: 0px;
   float: left;
   clear: left;
@@ -950,20 +1108,29 @@
 }
 
 .fullblownimage.projpage.projshowcase {
+  max-width: 100%;
   margin-top: 3px;
   margin-right: 0px;
   margin-left: 0px;
+  float: none;
 }
 
 .fullblownimage.projpage.projshowcase.firstimage {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.fullblownimage.projpage.projshowcase.lastimage {
+  margin-bottom: 150px;
 }
 
 .homeio.home {
   position: absolute;
   left: 0px;
+  top: 0px;
   right: 0px;
   bottom: 0px;
+  z-index: 0;
+  height: 600px;
   float: none;
   clear: none;
 }
@@ -992,19 +1159,23 @@
 }
 
 .design-statement {
-  width: 70%;
-  margin-top: 260px;
-  margin-bottom: 45px;
-  margin-left: -7px;
+  position: absolute;
+  top: 120px;
+  right: auto;
+  bottom: auto;
+  width: 35%;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 0px;
   float: none;
   clear: none;
   font-family: 'Roboto Slab', sans-serif;
-  color: #d4d3d3;
-  font-size: 65px;
-  line-height: 65px;
+  color: #333;
+  font-size: 35px;
+  line-height: 45px;
   font-weight: 300;
   text-align: left;
-  letter-spacing: -4px;
+  letter-spacing: -2px;
 }
 
 .insight {
@@ -1054,7 +1225,7 @@
   display: block;
   overflow: visible;
   width: auto;
-  margin: 160px 0px 0px;
+  margin: 2px 0px 150px;
   padding-left: 0px;
   float: none;
   clear: left;
@@ -1068,16 +1239,20 @@
 }
 
 .projdes {
-  margin-left: 3px;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: -5px;
   float: none;
   clear: none;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #c5c5c5;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 500;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #333;
+  font-size: 120px;
+  line-height: 120px;
+  font-weight: 100;
+  letter-spacing: -8px;
+  text-decoration: none;
+  text-transform: none;
 }
 
 .projdes.small {
@@ -1097,12 +1272,12 @@
   max-width: 50%;
   margin-top: 150px;
   margin-bottom: 0px;
-  margin-left: 0px;
+  margin-left: 592px;
   padding-top: 0px;
   font-family: 'Roboto Slab', sans-serif;
   color: #333;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 50px;
+  line-height: 58px;
   font-weight: 300;
   letter-spacing: -1px;
 }
@@ -1127,7 +1302,7 @@
 .sectiontitles.projpage.multiline {
   max-width: 50%;
   margin-top: 150px;
-  margin-left: -4px;
+  margin-left: 600px;
   float: none;
   clear: none;
   color: #333;
@@ -1145,8 +1320,8 @@
 
 .sectiontitles.projpage.multiline.afterprocesslabel {
   max-width: 50%;
-  margin-top: 80px;
-  margin-left: 0px;
+  margin-top: 20px;
+  margin-left: 600px;
   font-family: 'Roboto Slab', sans-serif;
   color: #333;
   font-size: 35px;
@@ -1157,20 +1332,22 @@
 }
 
 .sectiontitles.projpage.afterprocesslabel {
-  max-width: 70%;
-  margin-top: 50px;
-  font-family: Roboto, sans-serif;
-  color: #aaa;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  max-width: 50%;
+  margin-top: 20px;
+  margin-left: 592px;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #333;
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  text-transform: none;
 }
 
 .caption.projpage {
   max-width: 50%;
   margin-top: 0px;
+  margin-left: 600px;
   padding-top: 20px;
   float: none;
   clear: left;
@@ -1209,7 +1386,7 @@
 
 .caption.projpage.fullblownimage {
   margin-bottom: 0px;
-  margin-left: 42px;
+  margin-left: 588px;
 }
 
 .caption.fullblownimage {
@@ -1225,8 +1402,19 @@
   font-style: normal;
 }
 
+.introtext.projpage {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-left: 600px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
 .introtext.projpage.toppadding {
-  position: absolute;
+  position: static;
   left: 50px;
   top: 460px;
   max-width: 50%;
@@ -1324,6 +1512,13 @@
 }
 
 .smallthumbs.home {
+  position: static;
+  left: 0px;
+  bottom: 0px;
+  display: block;
+  width: auto;
+  float: none;
+  clear: none;
   opacity: 0.6;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -1343,21 +1538,84 @@
 }
 
 .finallylink {
+  position: static;
+  left: 0px;
+  bottom: 0px;
   height: 100%;
 }
 
 .sumtotal-link {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
   height: 100%;
   text-transform: uppercase;
 }
 
 .landingbanner {
-  height: auto;
+  height: 700px;
   padding-right: 50px;
-  padding-left: 50px;
+  padding-left: 30px;
+  background-image: url('../images/IMG_0673-copy.JPG');
+  background-position: 0px 0px;
+  background-size: 1632px;
+}
+
+.landingbanner.home {
+  height: 90px;
+  background-image: none;
+}
+
+.landingbanner.projpage {
+  position: relative;
+  height: 700px;
+  background-image: url('../images/Resp-Cover.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landingbanner.projpage.homeio {
+  background-image: url('../images/Home3.jpg');
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landingbanner.projpage.safenet {
+  background-image: -webkit-linear-gradient(270deg, rgba(48, 48, 48, .5), rgba(48, 48, 48, .5)), url('../images/ProjectBanners_Safenet.jpg');
+  background-image: linear-gradient(180deg, rgba(48, 48, 48, .5), rgba(48, 48, 48, .5)), url('../images/ProjectBanners_Safenet.jpg');
+  background-position: 0px 0px, 100% 100%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+}
+
+.landingbanner.projpage.parkhelper {
+  background-image: url('../images/ProjectBanners_Parkhelper2.jpg');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landingbanner.projpage.finally {
+  background-image: url('../images/ProjectBanners_Logitech2.jpg');
+  background-position: 100% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landingbanner.projpage.sumtotal {
+  background-image: -webkit-linear-gradient(270deg, rgba(73, 73, 73, .5), rgba(73, 73, 73, .5)), url('../images/SumTotalCover.jpg');
+  background-image: linear-gradient(180deg, rgba(73, 73, 73, .5), rgba(73, 73, 73, .5)), url('../images/SumTotalCover.jpg');
+  background-position: 0px 0px, 0px 0px;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
 }
 
 .nav.home {
+  position: absolute;
+  left: 600px;
+  top: 35px;
   margin-bottom: 80px;
 }
 
@@ -1368,7 +1626,8 @@
 
 .logo {
   margin-top: 0px;
-  padding-top: 90px;
+  margin-left: -3px;
+  padding-top: 30px;
 }
 
 .logotext {
@@ -1386,6 +1645,10 @@
   color: #aaa;
 }
 
+.logotext.projpage {
+  color: #fff;
+}
+
 .image-3 {
   float: left;
 }
@@ -1400,6 +1663,275 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
+}
+
+.intro.homelandingpage {
+  position: relative;
+  left: 600px;
+  top: 155px;
+  width: 30%;
+  margin-top: 0px;
+  margin-bottom: 25px;
+  margin-left: 0px;
+  float: none;
+  font-family: Roboto, sans-serif;
+  color: #999;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.homeprojdes {
+  width: auto;
+  max-width: 85%;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  margin-left: -7px;
+  padding-bottom: 140px;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #333;
+  font-size: 80px;
+  line-height: 90px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-transform: none;
+}
+
+.homeprojdes.parkhelper {
+  font-size: 110px;
+  line-height: 120px;
+}
+
+.casestudy {
+  width: 60%;
+  margin-top: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #bdb9b9;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.casestudy.logitech {
+  margin-left: 30px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.section {
+  height: 600px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-top: 1px solid #dfdfdf;
+}
+
+.projsectionhome {
+  width: auto;
+  height: 600px;
+  max-width: 100%;
+  min-width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-top-color: #dfdfdf;
+  background-image: url('../images/Powerbot-copy.png');
+  background-position: 95% 100%;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  text-decoration: none;
+}
+
+.projsectionhome:hover {
+  border-width: 1px;
+  border-top-color: hsla(0, 0%, 87%, 0);
+  background-color: #ddd8d2;
+  background-image: url('../images/Powerbot-copy.png');
+  background-position: 95% 100%;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  -webkit-filter: none;
+  filter: none;
+}
+
+.projdescription {
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.projdescription.projpage {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.projintro.projpage {
+  padding-right: 80px;
+}
+
+.proj {
+  margin-left: 600px;
+  font-family: Roboto, sans-serif;
+  color: #999;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 300;
+}
+
+.paragraph-3 {
+  margin-top: 100px;
+  margin-left: 570px;
+  font-family: 'Roboto Slab', sans-serif;
+  color: #fff;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 300;
+}
+
+.paragraph-4 {
+  margin-left: 600px;
+  font-family: Roboto, sans-serif;
+  color: #999;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.homeintro {
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 220px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.homeintro.section {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top-width: 1px;
+  border-top-color: #dfdfdf;
+}
+
+.homeintro.readmore {
+  font-style: italic;
+}
+
+.homeintro.link:hover {
+  color: #aaa;
+}
+
+.clients {
+  margin-bottom: 150px;
+  color: #999;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
+.text-span-6 {
+  color: #333;
+}
+
+.section-2 {
+  margin-left: 30px;
+  padding-right: 30px;
+}
+
+.projname.home {
+  color: #333;
+}
+
+.link-2 {
+  margin-bottom: 0px;
+}
+
+.learnmore.home {
+  margin-bottom: 100px;
+  float: none;
+  clear: none;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.text-block {
+  margin-bottom: 100px;
+}
+
+.link-block-2 {
+  color: #333;
+  font-size: 20px;
+  line-height: 15px;
+  text-decoration: none;
+}
+
+.text-block-2 {
+  margin-bottom: 100px;
+  font-size: 20px;
+  line-height: 15px;
+}
+
+.text-span-7 {
+  color: #333;
+}
+
+.text-span-8 {
+  color: #333;
+}
+
+.footerlinks {
+  margin-right: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  float: left;
+  border-bottom: 2px solid #000;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.paragraph-5 {
+  margin-bottom: 50px;
+}
+
+.footerintro {
+  margin-top: 50px;
+  font-family: Roboto, sans-serif;
+  color: #999;
+  font-size: 20px;
+  line-height: 55px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.contactdiv {
+  position: absolute;
+}
+
+.backtotopdiv {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+
+.link-3 {
+  text-decoration: none;
+}
+
+.projsectionhomelinkblock {
+  text-decoration: none;
 }
 
 html.w-mod-js *[data-ix="landingtextanimation"] {
@@ -1431,6 +1963,13 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .link.home.resume {
     padding-right: 40px;
   }
+  .link.home.resume.last {
+    padding-right: 0px;
+  }
+  .link.aboutme {
+    font-size: 35px;
+    line-height: 43px;
+  }
   .landingbanner2.projpage {
     height: 850px;
     padding-right: 30px;
@@ -1451,6 +1990,13 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .landingbanner2.projpage.sumtotal {
     height: 800px;
   }
+  .projheading.projpage {
+    left: 30px;
+    top: auto;
+    bottom: 180px;
+    width: 60%;
+    margin-left: -3px;
+  }
   .projheading.secondline.descenders {
     font-size: 20px;
     line-height: 25px;
@@ -1470,7 +2016,14 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     margin-left: 0px;
   }
   .image.projpage {
-    max-width: 75%;
+    max-width: 65%;
+    margin-left: 218px;
+  }
+  .image.projpage.rsmodel {
+    max-width: 65%;
+  }
+  .image.projpage.diagram {
+    margin-left: 220px;
   }
   .footer {
     padding-left: 30px;
@@ -1483,6 +2036,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .para.projpage.toppadding {
     max-width: 75%;
+    margin-left: 217px;
   }
   .para.projpage.toppadding.paraafter {
     max-width: 75%;
@@ -1492,10 +2046,14 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .para.projpage.insights {
     max-width: 75%;
+    margin-left: 217px;
+  }
+  .para.projpage.insights._2 {
+    max-width: 75%;
   }
   .sectionlabels.projpage.designprocess {
-    margin-top: 200px;
-    margin-left: 0px;
+    margin-top: 100px;
+    margin-left: 218px;
     font-size: 15px;
   }
   .nextprojectbutton {
@@ -1505,18 +2063,21 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .column-1.homesections {
     height: auto;
   }
+  .column-1.homelandingpage {
+    position: relative;
+  }
   .projsection.home {
     position: relative;
-    height: 800px;
+    height: auto;
     padding-right: 40px;
     padding-left: 40px;
   }
   .projsection.home.finally {
-    height: 400px;
+    height: 300px;
   }
   .projsection.projpage {
     padding-right: 30px;
-    padding-left: 30px;
+    padding-left: 10px;
   }
   .column-2 {
     padding-right: 30px;
@@ -1541,14 +2102,32 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     right: 0px;
     bottom: 0px;
   }
-  .projinfo.projpage {
+  .column-2.homelandingpage {
+    position: absolute;
+    left: 40px;
+  }
+  .roles.projpage {
     max-width: 80%;
-    margin-left: 20px;
+    margin-right: 30px;
+    margin-left: 0px;
     font-size: 14px;
     line-height: 19px;
+    text-align: left;
+  }
+  .roles.projpage.bold {
+    margin-left: 0px;
+  }
+  .roles.projpagediv {
+    position: absolute;
+    left: 30px;
+    right: auto;
+    bottom: 40px;
   }
   .name.home {
     margin-top: 0px;
+  }
+  .fullblownimage.projpage.projshowcase.firstimage {
+    margin-top: 30px;
   }
   .homeio.home {
     left: auto;
@@ -1558,13 +2137,16 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     padding-right: 40px;
   }
   .design-statement {
-    width: 90%;
+    width: 100%;
     margin-top: 320px;
     margin-bottom: 45px;
     margin-left: -4px;
-    font-size: 54px;
+    font-size: 45px;
     line-height: 56px;
     letter-spacing: -3px;
+  }
+  .video {
+    margin-bottom: 100px;
   }
   .projdes {
     width: 100%;
@@ -1572,6 +2154,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .sectiontitles.projpage {
     max-width: 75%;
     margin-top: 150px;
+    margin-left: 213px;
   }
   .sectiontitles.projpage.multiline {
     max-width: 75%;
@@ -1580,12 +2163,23 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .sectiontitles.projpage.multiline.afterprocesslabel {
     max-width: 75%;
   }
+  .sectiontitles.projpage.afterprocesslabel {
+    margin-left: 213px;
+  }
   .caption.projpage {
     max-width: 75%;
+    margin-left: 216px;
   }
   .caption.projpage.fullblownimage {
     margin-bottom: 0px;
-    margin-left: 20px;
+    margin-left: 216px;
+  }
+  .introtext.projpage {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 225px;
+    font-size: 35px;
+    line-height: 43px;
   }
   .introtext.projpage.toppadding {
     position: relative;
@@ -1596,19 +2190,85 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     padding-bottom: 0px;
     float: none;
   }
+  .smallthumbs.home {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: auto;
+  }
   .finallyheading {
     left: 40px;
     width: 100px;
+  }
+  .finallylink {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
   }
   .landingbanner {
     padding-right: 40px;
     padding-left: 40px;
   }
+  .landingbanner.home {
+    padding-left: 30px;
+  }
+  .landingbanner.projpage.homeio {
+    height: 800px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-position: 0px 100%;
+    background-size: cover;
+  }
+  .landingbanner.projpage.safenet {
+    height: 800px;
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)), url('../images/ProjectBanners_Safenet.jpg');
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .38), rgba(0, 0, 0, .38)), url('../images/ProjectBanners_Safenet.jpg');
+    background-position: 0px 0px, 50% 100%;
+  }
+  .landingbanner.projpage.parkhelper {
+    height: 800px;
+    background-position: 50% 100%;
+  }
+  .landingbanner.projpage.finally {
+    height: 800px;
+  }
+  .landingbanner.projpage.sumtotal {
+    height: 800px;
+    background-image: -webkit-linear-gradient(270deg, null, null), url('../images/SumTotalCover.jpg');
+    background-image: linear-gradient(180deg, null, null), url('../images/SumTotalCover.jpg');
+    background-position: 0px 0px, 100% 100%;
+  }
   .nav.home {
+    left: auto;
+    top: 40px;
+    right: 30px;
     margin-bottom: 80px;
+  }
+  .logo {
+    padding-top: 40px;
   }
   .abouttext {
     max-width: 80%;
+  }
+  .homeprojdes {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .casestudy {
+    width: 90%;
+  }
+  .projintro.projpage {
+    padding-right: 30px;
+  }
+  .homeintro {
+    width: 90%;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .backtotopdiv {
+    right: 0px;
   }
 }
 
@@ -1619,12 +2279,16 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .link.home.resume {
     padding-top: 0px;
     padding-right: 20px;
-    font-size: 11px;
+    font-size: 15px;
     font-style: normal;
   }
   .link.projpage {
     font-size: 16px;
     line-height: 26px;
+  }
+  .link.aboutme {
+    font-size: 25px;
+    line-height: 32px;
   }
   .landingbanner2.projpage {
     height: 750px;
@@ -1655,6 +2319,11 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 35px;
     line-height: 38px;
     letter-spacing: -2px;
+  }
+  .projheading.projpage {
+    bottom: 140px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .projheading.secondline.descenders {
     margin-left: -1px;
@@ -1689,20 +2358,27 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .image.projpage {
     max-width: 80%;
+    margin-left: 0px;
+  }
+  .image.projpage.diagram {
+    margin-left: 0px;
   }
   .footer {
     height: 150px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .copyright {
     position: absolute;
+    top: 110px;
     right: 0px;
     bottom: 0px;
-    padding-top: 50px;
-    padding-right: 10px;
+    padding-top: 0px;
+    padding-right: 30px;
+    font-size: 12px;
   }
-  .link-block {
-    padding-top: 40px;
+  .contactlink {
+    padding-top: 20px;
   }
   .projroles.projpage {
     margin-top: 0px;
@@ -1711,7 +2387,8 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     letter-spacing: -3px;
   }
   .para.projpage.toppadding {
-    max-width: 80%;
+    max-width: 100%;
+    margin-left: 0px;
     font-size: 16px;
     line-height: 26px;
   }
@@ -1725,16 +2402,18 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .para.projpage.insights {
     max-width: 80%;
     margin-top: 30px;
+    margin-left: 0px;
     font-size: 30px;
     line-height: 32px;
   }
   .sectionlabels.projpage.designprocess {
-    margin-top: 150px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
   .nextprojectbutton {
     width: auto;
     margin-right: 30px;
-    padding-top: 80px;
+    padding-top: 10px;
   }
   .column-1.homesections {
     height: auto;
@@ -1748,9 +2427,9 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .projsection.home {
     position: relative;
-    height: 260px;
+    height: auto;
     padding-right: 30px;
-    padding-left: 15px;
+    padding-left: 30px;
   }
   .projsection.home.finally {
     position: relative;
@@ -1758,14 +2437,18 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     height: 260px;
   }
   .projsection.projpage {
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .projsection.projpage.topborder.youmightlike {
     margin-top: 100px;
   }
   .projsection.projpage.youmightlike {
     margin-top: 150px;
+  }
+  .projsection.projpage.projshowcase {
+    padding-right: 30px;
+    padding-left: 30px;
   }
   .column-2.homesections {
     position: absolute;
@@ -1797,13 +2480,21 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 30px;
     line-height: 32px;
   }
-  .projinfo.projpage {
+  .roles.projpage {
+    margin-right: 20px;
     margin-left: 0px;
+    font-size: 11px;
+    line-height: 15px;
   }
-  .projinfo.youmightlike {
+  .roles.youmightlike {
     margin-bottom: 0px;
     font-size: 14px;
     line-height: 20px;
+  }
+  .roles.projpagediv {
+    bottom: 30px;
+    font-size: 11px;
+    line-height: 18px;
   }
   .projlink.projpage {
     margin-top: 0px;
@@ -1815,7 +2506,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 13px;
   }
   .fullblownimage.projpage {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .homeio.home {
     position: absolute;
@@ -1842,6 +2533,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .sectiontitles.projpage {
     max-width: 80%;
     margin-top: 100px;
+    margin-left: 0px;
     font-size: 30px;
     line-height: 32px;
   }
@@ -1856,13 +2548,27 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 30px;
     line-height: 32px;
   }
+  .sectiontitles.projpage.afterprocesslabel {
+    margin-left: 0px;
+    font-size: 30px;
+    line-height: 35px;
+  }
   .caption.projpage {
     max-width: 80%;
+    margin-left: 0px;
   }
   .caption.projpage.fullblownimage {
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: 20px;
     line-height: 26px;
+  }
+  .introtext.projpage {
+    max-width: 90%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .introtext.projpage.toppadding {
     top: 50px;
@@ -1871,14 +2577,17 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 26px;
   }
   .smallthumbs.home {
-    position: static;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: auto;
   }
   .finallylink {
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
-    width: 90%;
+    width: 100%;
   }
   .sumtotal-link {
     position: absolute;
@@ -1892,12 +2601,22 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     padding-right: 30px;
     padding-left: 15px;
   }
+  .landingbanner.home {
+    height: 70px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .landingbanner.projpage.homeio {
+    height: 300px;
+  }
   .nav.home {
+    top: 35px;
+    right: 15px;
     margin-bottom: 20px;
   }
   .logo {
     margin-top: 0px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .logotext {
     margin-left: 8px;
@@ -1909,6 +2628,33 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 16px;
     line-height: 26px;
   }
+  .homeprojdes {
+    max-width: 95%;
+    margin-top: 30px;
+    padding-bottom: 60px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .casestudy {
+    width: 80%;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .casestudy.logitech {
+    margin-left: 30px;
+  }
+  .projintro.projpage {
+    margin-left: 30px;
+  }
+  .homeintro {
+    width: 90%;
+    margin-bottom: 100px;
+    font-size: 25px;
+    line-height: 32px;
+  }
+  .homeintro.section {
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -1916,12 +2662,20 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 16px;
   }
   .link.home.resume {
-    padding-right: 20px;
-    font-size: 12px;
+    padding-right: 10px;
+    font-size: 14px;
   }
   .link.projpage {
     font-size: 16px;
     line-height: 26px;
+  }
+  .link.introtext {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .link.aboutme {
+    font-size: 20px;
+    line-height: 25px;
   }
   .landingbanner2.projpage {
     height: 1020px;
@@ -1953,6 +2707,14 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 35px;
     letter-spacing: -2px;
   }
+  .projheading.projpage {
+    left: 15px;
+    bottom: 330px;
+    width: 90%;
+    margin-left: -1px;
+    font-size: 19px;
+    line-height: 25px;
+  }
   .projheading.secondline.descenders {
     font-size: 35px;
     line-height: 35px;
@@ -1981,6 +2743,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .image.projpage {
     max-width: 95%;
     margin-top: 50px;
+    margin-left: 0px;
   }
   .image.projpage.rsmodel {
     max-width: 95%;
@@ -1988,26 +2751,27 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .image.projpage.diagram {
     max-width: 130%;
     margin-top: 30px;
+    margin-left: 0px;
   }
   .footer {
-    height: 140px;
-    padding-left: 10px;
+    height: 150px;
+    padding-left: 15px;
   }
   .copyright {
-    left: 0px;
-    top: 0px;
+    left: 15px;
+    top: auto;
     right: auto;
-    bottom: 0px;
+    bottom: 15px;
     margin-top: 10px;
     padding-top: 0px;
     font-size: 12px;
     text-align: left;
   }
   .socialicon {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-right: 10px;
   }
-  .link-block {
+  .contactlink {
     padding-top: 0px;
   }
   .projroles.projpage {
@@ -2017,7 +2781,8 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .para.projpage.toppadding {
     max-width: 95%;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-left: 0px;
     font-size: 16px;
     line-height: 26px;
   }
@@ -2035,18 +2800,23 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .para.projpage.insights {
     max-width: 95%;
     margin-top: 30px;
+    margin-left: 0px;
     font-size: 30px;
     line-height: 32px;
     letter-spacing: -1.5px;
   }
+  .para.projpage.insights._2 {
+    max-width: 95%;
+  }
   .sectionlabels.projpage.designprocess {
-    margin-top: 120px;
-    font-size: 12px;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 11px;
   }
   .nextprojectbutton {
     width: auto;
-    margin-right: 30px;
-    padding-top: 60px;
+    margin-right: 15px;
+    padding-top: 10px;
     padding-bottom: 20px;
     font-size: 15px;
   }
@@ -2059,16 +2829,19 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     position: absolute;
     left: 0px;
     top: 0px;
-    height: 300px;
+    height: 250px;
   }
   .projsection.home {
     position: relative;
-    height: 450px;
+    height: auto;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 15px;
   }
   .projsection.home.finally {
-    height: 600px;
+    height: 500px;
+  }
+  .projsection.projpage {
+    padding-left: 10px;
   }
   .projsection.projpage.topborder.youmightlike {
     margin-top: 100px;
@@ -2077,8 +2850,8 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     margin-top: 100px;
   }
   .projsection.projpage.projshowcase {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .column-2.footercolumn {
     position: relative;
@@ -2100,12 +2873,12 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     padding-right: 20px;
   }
   .column-2.homesections.leftborder {
-    position: absolute;
+    position: relative;
     left: 0px;
-    top: 300px;
+    top: 250px;
     right: 0px;
     bottom: auto;
-    height: 300px;
+    height: 250px;
     border-top-width: 1px;
     border-top-color: #dfdfdf;
   }
@@ -2123,15 +2896,22 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     max-width: 90%;
     margin-top: 40px;
   }
-  .projinfo.projpage {
-    margin-left: 10px;
+  .roles.projpage {
+    margin-left: 0px;
     font-size: 12px;
     line-height: 16px;
   }
-  .projinfo.youmightlike {
+  .roles.projpage.fourcolumn {
+    float: none;
+  }
+  .roles.youmightlike {
     width: 85%;
     font-size: 12px;
     line-height: 17px;
+  }
+  .roles.projpagediv {
+    left: 15px;
+    bottom: 20px;
   }
   .projlink.projpage {
     margin-top: 40px;
@@ -2148,6 +2928,14 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .fullblownimage.projpage.projshowcase {
     margin-top: 0px;
+    margin-bottom: 2px;
+  }
+  .fullblownimage.projpage.projshowcase.firstimage {
+    margin-top: 10px;
+    margin-bottom: 2px;
+  }
+  .fullblownimage.projpage.projshowcase.lastimage {
+    margin-bottom: 80px;
   }
   .homeio.home {
     width: 100%;
@@ -2166,7 +2954,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 38px;
   }
   .video {
-    margin-top: 120px;
+    margin-top: 0px;
   }
   .projdes {
     margin-left: 0px;
@@ -2175,9 +2963,12 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     letter-spacing: 1px;
   }
   .sectiontitles.projpage {
+    max-width: 90%;
     margin-top: 100px;
+    margin-left: 0px;
     font-size: 30px;
     line-height: 32px;
+    letter-spacing: 0px;
   }
   .sectiontitles.projpage.multiline {
     margin-top: 100px;
@@ -2189,10 +2980,28 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 30px;
     line-height: 32px;
   }
+  .sectiontitles.projpage.afterprocesslabel {
+    max-width: 90%;
+    margin-left: 0px;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 0px;
+  }
   .caption.projpage {
     max-width: 95%;
+    margin-left: 0px;
     font-size: 14px;
     line-height: 20px;
+  }
+  .caption.projpage.fullblownimage {
+    line-height: 20px;
+  }
+  .introtext.projpage {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 0px;
+    font-size: 20px;
+    line-height: 25px;
   }
   .introtext.projpage.toppadding {
     max-width: 95%;
@@ -2202,8 +3011,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .smallthumbs.home {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    left: 0px;
     bottom: 0px;
     width: 95%;
   }
@@ -2213,7 +3021,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     top: 0px;
     right: 0px;
     width: 100%;
-    height: 300px;
+    height: 100%;
   }
   .sumtotal-link {
     position: absolute;
@@ -2227,14 +3035,63 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     padding-right: 10px;
     padding-left: 10px;
   }
+  .landingbanner.projpage.homeio {
+    height: 500px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .landingbanner.projpage.safenet {
+    height: 500px;
+  }
+  .landingbanner.projpage.parkhelper {
+    height: 500px;
+  }
+  .landingbanner.projpage.finally {
+    height: 500px;
+  }
+  .landingbanner.projpage.sumtotal {
+    height: 500px;
+    background-image: -webkit-linear-gradient(270deg, null, null), url('../images/SumTotalCover.jpg');
+    background-image: linear-gradient(180deg, null, null), url('../images/SumTotalCover.jpg');
+    background-position: 0px 0px, 100% 50%;
+  }
   .nav.home {
     margin-bottom: 60px;
+  }
+  .logotext {
+    font-size: 14px;
   }
   .abouttext {
     top: 250px;
     font-size: 16px;
     line-height: 26px;
     letter-spacing: -0.1px;
+  }
+  .homeprojdes {
+    margin-left: -4px;
+    font-size: 45px;
+    line-height: 48px;
+  }
+  .casestudy {
+    width: 90%;
+    font-size: 11px;
+  }
+  .projintro.projpage {
+    margin-left: 10px;
+  }
+  .homeintro {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .homeintro.section {
+    padding-right: 15px;
+  }
+  .backtotopdiv {
+    top: 0px;
+    right: 0px;
   }
 }
 
