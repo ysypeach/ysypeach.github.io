@@ -9,6 +9,12 @@
   text-decoration: none;
 }
 
+.link.w--current {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  font-style: normal;
+}
+
 .link.home.resume {
   margin-top: 80px;
   margin-right: 0px;
@@ -64,8 +70,16 @@
 }
 
 .link.introtext {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #000;
   font-size: 40px;
   line-height: 55px;
+  font-style: italic;
+}
+
+.link.introtext:hover {
+  border-bottom-width: 0px;
+  color: #b4b4b4;
 }
 
 .link.aboutme {
@@ -81,6 +95,24 @@
 .link.aboutme:hover {
   border-bottom-color: hsla(0, 0%, 100%, 0);
   color: #aaa;
+}
+
+.link.projectpage {
+  border-bottom: 1px solid #333;
+  font-style: italic;
+}
+
+.link.projectpage:hover {
+  border-bottom-width: 0px;
+  color: #b4b4b4;
+}
+
+.link.projectpage.w--current {
+  padding-bottom: 3px;
+}
+
+.link.projectpage.w--current:hover {
+  border-bottom: 0px solid #000;
 }
 
 .landingbanner2 {
@@ -676,6 +708,17 @@
   font-weight: 500;
 }
 
+.para.projpage.reports {
+  margin-bottom: 0px;
+  margin-left: 0px;
+  float: none;
+  clear: none;
+  color: #333;
+  font-style: italic;
+  text-decoration: none;
+  text-transform: none;
+}
+
 .sectionlabels {
   padding-left: 4px;
   font-family: Roboto, sans-serif;
@@ -1225,7 +1268,7 @@
   display: block;
   overflow: visible;
   width: auto;
-  margin: 2px 0px 150px;
+  margin: 2px 0px 50px;
   padding-left: 0px;
   float: none;
   clear: left;
@@ -1803,7 +1846,7 @@
 }
 
 .homeintro {
-  width: 80%;
+  width: 70%;
   margin-top: 30px;
   margin-bottom: 220px;
   font-family: Roboto, sans-serif;
@@ -1932,6 +1975,39 @@
 
 .projsectionhomelinkblock {
   text-decoration: none;
+}
+
+.research-report {
+  margin-right: 50px;
+  margin-bottom: 200px;
+  margin-left: 595px;
+  font-family: Roboto, sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.research-report.links {
+  margin-right: 30px;
+  margin-left: 0px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  font-style: italic;
+}
+
+.research-report.links:hover {
+  border-bottom-width: 0px;
+  color: #aaa;
+}
+
+.text-block-3 {
+  float: none;
+}
+
+.link10 {
+  margin-left: 10px;
+  color: #bebebe;
 }
 
 html.w-mod-js *[data-ix="landingtextanimation"] {
