@@ -2042,6 +2042,10 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .link.home.resume.last {
     padding-right: 0px;
   }
+  .link.introtext {
+    font-size: 35px;
+    line-height: 43px;
+  }
   .link.aboutme {
     font-size: 35px;
     line-height: 43px;
@@ -2222,7 +2226,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     letter-spacing: -3px;
   }
   .video {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .projdes {
     width: 100%;
@@ -2346,6 +2350,9 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .backtotopdiv {
     right: 0px;
   }
+  .research-report {
+    margin-left: 225px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2362,9 +2369,17 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 16px;
     line-height: 26px;
   }
+  .link.introtext {
+    font-size: 20px;
+    line-height: 25px;
+  }
   .link.aboutme {
     font-size: 25px;
     line-height: 32px;
+  }
+  .link.projectpage {
+    font-size: 16px;
+    line-height: 26px;
   }
   .landingbanner2.projpage {
     height: 750px;
@@ -2397,9 +2412,21 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     letter-spacing: -2px;
   }
   .projheading.projpage {
-    bottom: 140px;
+    bottom: 250px;
     font-size: 20px;
     line-height: 25px;
+  }
+  .projheading.projpage.homeio {
+    bottom: 140px;
+  }
+  .projheading.projpage.finally {
+    bottom: 150px;
+  }
+  .projheading.projpage.safenet {
+    bottom: 150px;
+  }
+  .projheading.projpage.parkhelper {
+    bottom: 150px;
   }
   .projheading.secondline.descenders {
     margin-left: -1px;
@@ -2562,6 +2589,9 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 11px;
     line-height: 15px;
   }
+  .roles.projpage.fourcolumn {
+    margin-bottom: 30px;
+  }
   .roles.youmightlike {
     margin-bottom: 0px;
     font-size: 14px;
@@ -2600,6 +2630,9 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -2px;
+  }
+  .video {
+    margin-bottom: 20px;
   }
   .projdes {
     margin-left: 0px;
@@ -2731,6 +2764,12 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .homeintro.section {
     padding-left: 15px;
   }
+  .research-report {
+    margin-left: 30px;
+  }
+  .research-report.links {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 479px) {
@@ -2790,6 +2829,18 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     margin-left: -1px;
     font-size: 19px;
     line-height: 25px;
+  }
+  .projheading.projpage.homeio {
+    bottom: 330px;
+  }
+  .projheading.projpage.finally {
+    bottom: 210px;
+  }
+  .projheading.projpage.safenet {
+    bottom: 290px;
+  }
+  .projheading.projpage.parkhelper {
+    bottom: 240px;
   }
   .projheading.secondline.descenders {
     font-size: 35px;
@@ -2974,11 +3025,17 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .roles.projpage {
     margin-left: 0px;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .roles.projpage.bold {
+    margin-bottom: 0px;
   }
   .roles.projpage.fourcolumn {
+    margin-bottom: 15px;
     float: none;
+    font-size: 11px;
+    line-height: 15px;
   }
   .roles.youmightlike {
     width: 85%;
@@ -3168,6 +3225,9 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   .backtotopdiv {
     top: 0px;
     right: 0px;
+  }
+  .research-report {
+    margin-left: 10px;
   }
 }
 
