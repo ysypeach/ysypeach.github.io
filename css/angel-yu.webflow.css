@@ -2370,10 +2370,12 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 26px;
   }
   .link.introtext {
+    border-bottom-width: 1px;
     font-size: 20px;
     line-height: 25px;
   }
   .link.aboutme {
+    border-bottom-width: 1px;
     font-size: 25px;
     line-height: 32px;
   }
@@ -2417,16 +2419,19 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 25px;
   }
   .projheading.projpage.homeio {
-    bottom: 140px;
+    bottom: 2000px;
   }
   .projheading.projpage.finally {
-    bottom: 150px;
+    bottom: 2000px;
   }
   .projheading.projpage.safenet {
-    bottom: 150px;
+    bottom: 2000px;
   }
   .projheading.projpage.parkhelper {
-    bottom: 150px;
+    bottom: 2000px;
+  }
+  .projheading.projpage.sumtotal {
+    bottom: 2000px;
   }
   .projheading.secondline.descenders {
     margin-left: -1px;
@@ -2478,6 +2483,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     bottom: 0px;
     padding-top: 0px;
     padding-right: 30px;
+    color: #aaa;
     font-size: 12px;
   }
   .contactlink {
@@ -2590,7 +2596,8 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 15px;
   }
   .roles.projpage.fourcolumn {
-    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-bottom: 0px;
   }
   .roles.youmightlike {
     margin-bottom: 0px;
@@ -2598,6 +2605,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 20px;
   }
   .roles.projpagediv {
+    left: 30px;
     bottom: 30px;
     font-size: 11px;
     line-height: 18px;
@@ -2672,12 +2680,12 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 26px;
   }
   .introtext.projpage {
-    max-width: 90%;
+    max-width: 100%;
     margin-top: 60px;
     margin-bottom: 60px;
     margin-left: 0px;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
   .introtext.projpage.toppadding {
     top: 50px;
@@ -2717,6 +2725,22 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .landingbanner.projpage.homeio {
     height: 300px;
+  }
+  .landingbanner.projpage.safenet {
+    height: 300px;
+    padding-left: 30px;
+  }
+  .landingbanner.projpage.parkhelper {
+    height: 300px;
+    padding-left: 30px;
+  }
+  .landingbanner.projpage.finally {
+    height: 300px;
+    padding-left: 30px;
+  }
+  .landingbanner.projpage.sumtotal {
+    height: 300px;
+    padding-left: 30px;
   }
   .nav.home {
     top: 35px;
@@ -2759,7 +2783,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     width: 90%;
     margin-bottom: 100px;
     font-size: 25px;
-    line-height: 32px;
+    line-height: 35px;
   }
   .homeintro.section {
     padding-left: 15px;
@@ -2785,6 +2809,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 26px;
   }
   .link.introtext {
+    border-bottom-width: 1px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -2831,16 +2856,16 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 25px;
   }
   .projheading.projpage.homeio {
-    bottom: 330px;
+    bottom: 2000px;
   }
   .projheading.projpage.finally {
-    bottom: 210px;
+    bottom: 2000px;
   }
   .projheading.projpage.safenet {
-    bottom: 290px;
+    bottom: 2000px;
   }
   .projheading.projpage.parkhelper {
-    bottom: 240px;
+    bottom: 2000px;
   }
   .projheading.secondline.descenders {
     font-size: 35px;
@@ -2868,7 +2893,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     clear: none;
   }
   .image.projpage {
-    max-width: 95%;
+    max-width: 100%;
     margin-top: 50px;
     margin-left: 0px;
   }
@@ -2891,6 +2916,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     bottom: 15px;
     margin-top: 10px;
     padding-top: 0px;
+    color: #aaa;
     font-size: 12px;
     text-align: left;
   }
@@ -2923,6 +2949,9 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     margin-top: 20px;
     font-size: 16px;
     line-height: 26px;
+  }
+  .para.projpage.toppadding.secondpara {
+    max-width: 95%;
   }
   .para.projpage.insights {
     max-width: 95%;
@@ -2968,6 +2997,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     height: 500px;
   }
   .projsection.projpage {
+    padding-right: 10px;
     padding-left: 10px;
   }
   .projsection.projpage.topborder.youmightlike {
@@ -3024,12 +3054,22 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     margin-top: 40px;
   }
   .roles.projpage {
+    max-width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
     margin-left: 0px;
+    float: none;
     font-size: 11px;
-    line-height: 15px;
+    line-height: 17px;
+    font-weight: 300;
   }
   .roles.projpage.bold {
+    position: static;
+    margin-right: 0px;
     margin-bottom: 0px;
+    float: none;
+    line-height: 17px;
+    text-align: left;
   }
   .roles.projpage.fourcolumn {
     margin-bottom: 15px;
@@ -3043,7 +3083,7 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 17px;
   }
   .roles.projpagediv {
-    left: 15px;
+    left: 10px;
     bottom: 20px;
   }
   .projlink.projpage {
@@ -3127,14 +3167,17 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     line-height: 20px;
   }
   .caption.projpage.fullblownimage {
+    max-width: 100%;
+    margin-left: 0px;
     line-height: 20px;
   }
   .introtext.projpage {
+    max-width: 100%;
     margin-top: 80px;
     margin-bottom: 80px;
     margin-left: 0px;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
   .introtext.projpage.toppadding {
     max-width: 95%;
@@ -3170,22 +3213,26 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
   }
   .landingbanner.projpage.homeio {
     height: 500px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   .landingbanner.projpage.safenet {
     height: 500px;
+    padding-left: 15px;
   }
   .landingbanner.projpage.parkhelper {
     height: 500px;
+    padding-left: 10px;
   }
   .landingbanner.projpage.finally {
     height: 500px;
+    padding-left: 10px;
   }
   .landingbanner.projpage.sumtotal {
     height: 500px;
-    background-image: -webkit-linear-gradient(270deg, null, null), url('../images/SumTotalCover.jpg');
-    background-image: linear-gradient(180deg, null, null), url('../images/SumTotalCover.jpg');
+    padding-left: 10px;
+    background-image: -webkit-linear-gradient(270deg, transparent, transparent), url('../images/SumTotalCover.jpg');
+    background-image: linear-gradient(180deg, transparent, transparent), url('../images/SumTotalCover.jpg');
     background-position: 0px 0px, 100% 50%;
   }
   .nav.home {
@@ -3209,15 +3256,19 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     width: 90%;
     font-size: 11px;
   }
+  .casestudy.logitech {
+    margin-left: 10px;
+  }
   .projintro.projpage {
     margin-left: 10px;
+    padding-right: 20px;
   }
   .homeintro {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 150px;
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
   .homeintro.section {
     padding-right: 15px;
@@ -3227,7 +3278,11 @@ html.w-mod-js *[data-ix="scrollintoview-text"] {
     right: 0px;
   }
   .research-report {
+    margin-bottom: 100px;
     margin-left: 10px;
+  }
+  .research-report.links {
+    margin-bottom: 100px;
   }
 }
 
